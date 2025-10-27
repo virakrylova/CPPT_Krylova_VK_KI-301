@@ -1,0 +1,24 @@
+Телефон ki_301_krylova_lab2.Phone@3f102e87 створений.
+Телефон Iphone увімкнено
+Заряджено батарею з 100 до 100
+Змінено яскравість екрану на 80
+Оновлено ОС з версії 18 до 19
+Перевірено рівень заряду батареї: 100
+Встановлено нову програму: Telegram (розмір: 400 MB)
+Видалено програму: Telegram (звільнено 400 MB)
+Перевірено доступне місце: 10000 MB
+Отримано інформацію про телефон
+Перевірено стан телефону: ввімкнений
+Телефон Iphone вимкнено
+Phone ki_301_krylova_lab2.Phone@3f102e87 created.
+Phone Iphone is on
+Battery charged from 100 to 100
+Changed screen brightness to 80
+Updated OS from version 18 to 19
+Battery level checked: 100
+New program installed: Telegram (size: 400 MB)
+Uninstalled program: Telegram (400 MB freed up)
+Checked available space: 10000 MB
+Phone information received
+Phone status checked: on
+Phone Iphone is  off
