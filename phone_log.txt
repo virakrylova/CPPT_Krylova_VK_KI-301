@@ -1,0 +1,22 @@
+Абстрактний Phone 'Pixel 8 Pro' створений. Сховище: 256000 MB
+Створено Smartphone: Pixel 8 Pro
+Смартфон Pixel 8 Pro вмикається... Завантаження Android...
+Встановлено програму: Telegram (розмір: 600 MB). Залишок місця: 255400 MB
+Заряджено батарею з 80% до 90%
+Перевірено рівень заряду батареї: 90%
+Оновлено ОС з версії 13 до 14
+Підключено до Wi-Fi мережі: MyHomeNetwork
+Мобільний інтернет (5G) увімкнено
+Отримано повну інформацію про смартфон.
+Телефон Pixel 8 Pro вимкнено
+Abstract Phone 'Pixel 8 Pro' created. Storage: 256000 MB
+Smartphone created: Pixel 8 Pro
+Smartphone Pixel 8 Pro is turning on... Booting Android...
+Installed app: Telegram (size: 600 MB). Storage remaining: 255400 MB
+Battery charged from 80% to 90%
+Checked battery level: 90%
+OS updated from version 13 to 14
+Connected to Wi-Fi network: MyHomeNetwork
+Mobile data (5G) enabled
+Retrieved full smartphone information.
+Phone Pixel 8 Pro turned off
