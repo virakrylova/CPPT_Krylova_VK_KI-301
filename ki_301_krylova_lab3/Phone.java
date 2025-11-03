@@ -42,7 +42,7 @@ public abstract class Phone {
 
         // Ініціалізація логера
         this.logger = new Logger("phone_log.txt");
-        // ПЕРЕКЛАДЕНО:
+        
         logger.log(String.format("Abstract Phone '%s' created. Storage: %d MB", name, storage));
     }
     
@@ -80,7 +80,7 @@ public abstract class Phone {
      */
     public void turnOff() throws IOException {
         isOn = false;
-        // ПЕРЕКЛАДЕНО:
+        
         logger.log(String.format("Phone %s turned off", name));
         System.out.printf("Phone %s turned off\n", name);
     }
@@ -93,7 +93,7 @@ public abstract class Phone {
     public void chargeBattery(int minutes) throws IOException {
         int oldCharge = battery.getChargeLevel();
         battery.charge(minutes);
-        // ПЕРЕКЛАДЕНО:
+        
         logger.log(String.format("Battery charged from %s%% to %s%%", oldCharge, battery.getChargeLevel()));
         System.out.printf("Battery charged from %s%% to %s%%\n", oldCharge, battery.getChargeLevel());
     }
@@ -105,7 +105,7 @@ public abstract class Phone {
      */
     public void changeScreenBrightness(int brightness) throws IOException {
         screen.setBrightness(brightness);
-        // ПЕРЕКЛАДЕНО:
+        
         logger.log(String.format("Screen brightness changed to %s", brightness));
         System.out.printf("Screen brightness changed to %s\n", brightness);
     }
@@ -118,7 +118,7 @@ public abstract class Phone {
     public void updateOSVersion(String newVersion) throws IOException {
         String oldVersion = operatingSystem.getVersion();
         operatingSystem.setVersion(newVersion);
-        // ПЕРЕКЛАДЕНО:
+        
         logger.log(String.format("OS updated from version %s to %s", oldVersion, newVersion));
         System.out.printf("OS updated from version %s to %s\n", oldVersion, newVersion);
     }
@@ -132,11 +132,11 @@ public abstract class Phone {
     public void uninstallApp(String appName, int appSize) throws IOException {
         if (installedApps.remove(appName)) {
             availableStorage += appSize;
-            // ПЕРЕКЛАДЕНО:
+            
             logger.log(String.format("Uninstalled app: %s (freed %d MB). Available: %d MB", appName, appSize, availableStorage));
             System.out.printf("Uninstalled app: %s (freed %d MB). Available: %d MB\n", appName, appSize, availableStorage);
         } else {
-            // ПЕРЕКЛАДЕНО:
+            
             logger.log(String.format("Failed to uninstall app %s. App not found.", appName));
             System.out.printf("Failed to uninstall app %s. App not found.\n", appName);
         }
@@ -149,7 +149,7 @@ public abstract class Phone {
      */
     public int checkBatteryLevel() throws IOException {
         int level = battery.getChargeLevel();
-        // ПЕРЕКЛАДЕНО:
+       
         logger.log(String.format("Checked battery level: %s%%", level));
         System.out.printf("Checked battery level: %s%%\n", level);
         return level;
@@ -160,7 +160,7 @@ public abstract class Phone {
      */
     public void closeLogger() {
         logger.close();
-        // ПЕРЕКЛАДЕНО:
+    
         System.out.println("Log file closed.");
     }
     
@@ -180,7 +180,7 @@ public abstract class Phone {
      * @return Рядок з інформацією.
      */
     protected String getInfoString() {
-         // ПЕРЕКЛАДЕНО:
+         
          return String.format("Name: %s | OS: %s %s | Battery: %d%%/%dmAh | Storage: %d MB",
                 name, operatingSystem.getName(), operatingSystem.getVersion(),
                 battery.getChargeLevel(), battery.getCapacity(), availableStorage);

@@ -22,7 +22,6 @@ public class PhoneDriver {
             // Створюємо конкретний об'єкт Smartphone
             myPhone = new Smartphone("Pixel 8 Pro", 256000); // 256 GB
 
-            // ПЕРЕКЛАДЕНО:
             System.out.println("--- STARTING TEST (Lab. 3) ---");
             
             // 1. Тестування абстрактних методів, реалізованих у Smartphone
@@ -39,19 +38,19 @@ public class PhoneDriver {
             // перевірити тип і виконати явне приведення типів (casting).
             
             if (myPhone instanceof Connectivity) {
-                // ПЕРЕКЛАДЕНО:
+                
                 System.out.println("\n--- Testing Connectivity Interface ---");
                 Connectivity networkDevice = (Connectivity) myPhone;
                 
                 networkDevice.connectToWifi("MyHomeNetwork", "password123");
                 networkDevice.toggleMobileData(true);
             } else {
-                // ПЕРЕКЛАДЕНО:
+                
                 System.out.println("This phone does not support Connectivity.");
             }
 
             // 4. Тестування оновленого методу getInfo
-            // ПЕРЕКЛАДЕНО:
+           
             System.out.println("\n--- Final Information ---");
             String info = myPhone.getInfo();
             System.out.println(info);
@@ -59,19 +58,17 @@ public class PhoneDriver {
             // 5. Вимкнення
             myPhone.turnOff();
             
-            // ПЕРЕКЛАДЕНО:
             System.out.println("--- TEST COMPLETED ---");
 
         } catch (IOException e) {
             // Обробка помилок вводу/виводу
-            // ПЕРЕКЛАДЕНО:
             System.err.println("I/O ERROR. Failed to write log to file:");
             e.printStackTrace();
         } finally {
             // Коректне завершення роботи з файлом (вимога завдання)
             // Цей блок завжди виконується.
             if (myPhone != null) {
-                // ПЕРЕКЛАДЕНО:
+                
                 System.out.println("\nRunning closeLogger()...");
                 myPhone.closeLogger();
             }
