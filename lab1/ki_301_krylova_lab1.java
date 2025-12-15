@@ -5,8 +5,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * Клас public class ki_301_krylova_lab1 {
- * реалізує лабораторну роботу №1
+ * Клас Lab1ПрізвищеГрупа реалізує лабораторну роботу №1
  */
 public class ki_301_krylova_lab1 {
     /**
@@ -18,19 +17,16 @@ public class ki_301_krylova_lab1 {
         Scanner sc = new Scanner(System.in);
 
         // Ввід розміру матриці
-        // ПЕРЕКЛАДЕНО:
-        System.out.println("Enter the matrix size: ");
+        System.out.println("Введіть розмір матриці: ");
         int row = sc.nextInt();
 
         // Ввід символа заповнювача
-        // ПЕРЕКЛАДЕНО:
-        System.out.println("Enter the filler symbol: ");
+        System.out.println("Введіть символ заповнювач: ");
         String symbol = sc.next();
 
         // Перевірка на валідність символа заповнювача
         if (symbol.length() != 1) {
-            // ПЕРЕКЛАДЕНО:
-            System.out.println("Please enter a correct filler symbol");
+            System.out.println("Введіть коректний символ заповнювач");
             return;
         }
 
@@ -42,8 +38,7 @@ public class ki_301_krylova_lab1 {
             printMatrix(arr, symbol, row, fileName);
         } catch (IOException e) {
             // Обробка помилки під час запису в файл
-            // ПЕРЕКЛАДЕНО:
-            throw new RuntimeException("An error occurred while writing to the file: " + e.getMessage());
+            throw new RuntimeException("Сталася помилка під час запису в файл: " + e.getMessage());
         }
     }
 
@@ -57,8 +52,7 @@ public class ki_301_krylova_lab1 {
      * @throws IOException якщо столась якась помилка при запису в файл
      */
     public static void printMatrix(String[][] arr, String symbol, int row, String file) throws IOException {
-        // ПЕРЕКЛАДЕНО:
-        System.out.println("Matrix result: ");
+        System.out.println("Результат матриці: ");
 
         try (FileWriter writer = new FileWriter(file)) {
             // Логіка для формування зубачастого масиву за варіантом

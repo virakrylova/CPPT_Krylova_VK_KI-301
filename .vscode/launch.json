@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "ki_301_krylova_lab1",
+            "request": "launch",
+            "mainClass": "lab1.ki_301_krylova_lab1",
+            "projectName": "CPPT_Krylova_VK_KI-301_b3a51fe1"
+        },
+        {
             "type": "jdk",
             "request": "launch",
             "name": "Launch Java App"
